@@ -1,0 +1,2 @@
+C:\Users\Ethan Barrett\source\repos\fun\Debug\fun.exe
+C:\Users\Ethan Barrett\source\repos\fun\Debug\fun.pdb
