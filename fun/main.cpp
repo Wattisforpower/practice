@@ -5,6 +5,7 @@
 	Converter
 	random number generator
 	Time Functions
+	differentiation/integration
 */
 
 
@@ -18,7 +19,7 @@ extern void primes();
 extern void converter_main();
 extern void CarTravelFinder();
 extern void TimeMain();
-extern void PasswordMain();
+extern void Maths_Main();
 
 int main() {
 	system("cls");
@@ -29,7 +30,7 @@ int main() {
 	printf("2 - Machinists Converter \n");
 	printf("3 - Car Travel Finder \n");
 	printf("4 - Time \n");
-	printf("5 - 12 character long password generator \n");
+	printf("5 - Maths \n");
 
 
 	scanf("%d", &selection);
@@ -46,6 +47,8 @@ int main() {
 		break;
 	case 4:
 		TimeMain();
+	case 5:
+		Maths_Main();
 	}
 
 	return 0;

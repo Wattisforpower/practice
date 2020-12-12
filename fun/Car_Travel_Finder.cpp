@@ -13,6 +13,14 @@ static void movement(float Fuel, float Miles, float mpg) {
 	else if ((Miles * mpg) > Fuel) {
 		printf("You do not have enough Fuel Sorry. \n");
 	}
+
+	printf("Would you like to return to main menu? if so press 1 \n");
+	int exit;
+	scanf("%d", &exit);
+	
+	if (exit == 1) {
+		main();
+	}
 }
 
 void CarTravelFinder() {
@@ -26,21 +34,4 @@ void CarTravelFinder() {
 	scanf("%f", &mpg);
 
 	movement(Fuel, Miles, mpg);
-
-	printf("Thankyou for using the converter, would you like to use it again or go back to main? Y = Main and N == Use Again\n");
-	char val;
-	scanf("%c", &val);
-	if (val == 'y') {
-		main();
-	}
-	else if (val == 'Y') {
-		main();
-	}
-	else if (val == 'n') {
-		return CarTravelFinder();
-	}
-	else if (val == 'N') {
-		return CarTravelFinder();
-	}
-
 }
