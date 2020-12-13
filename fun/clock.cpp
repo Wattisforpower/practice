@@ -84,12 +84,16 @@ void TimeMain() {
 	switch (Option) {
 	case 1:
 		main();
+		break;
 	case 2:
 		CTime();
+		break;
 	case 3:
 		Alarm_Minutes();
+		break;
 	case 4:
 		Alarm_Seconds();
+		break;
 	}
 
 }

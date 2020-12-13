@@ -149,6 +149,7 @@
     <ClCompile Include="maths.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="primes.cpp" />
+    <ClCompile Include="tictactoe.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -14,12 +14,14 @@
 #include <iostream> // c++ input/output
 #include <stdio.h> // c input/output
 
+using namespace std;
 
 extern void primes();
 extern void converter_main();
 extern void CarTravelFinder();
 extern void TimeMain();
 extern void Maths_Main();
+extern void TicTacToe_Main();
 
 int main() {
 	system("cls");
@@ -31,9 +33,9 @@ int main() {
 	printf("3 - Car Travel Finder \n");
 	printf("4 - Time \n");
 	printf("5 - Maths \n");
+	printf("6 - TicTacToe \n");
 
-
-	scanf("%d", &selection);
+	cin >> selection;
 
 	switch (selection) {
 	case 1:
@@ -47,8 +49,13 @@ int main() {
 		break;
 	case 4:
 		TimeMain();
+		break;
 	case 5:
 		Maths_Main();
+		break;
+	case 6:
+		TicTacToe_Main();
+		break;
 	}
 
 	return 0;

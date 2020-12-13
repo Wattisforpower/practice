@@ -96,7 +96,9 @@ void Maths_Main() {
 	switch (option) {
 	case 1:
 		main();
+		break;
 	case 2:
 		Transpose_Main();
+		break;
 	}
 }
